@@ -5,8 +5,6 @@ import os
 ################################################
 
 # Carga de datos:
-
-
 def leer_instancia(filepath):
 
     fp=open(filepath)
@@ -38,29 +36,31 @@ def leer_instancia(filepath):
 ################################################
 ################################################
 
-# Test:
-print("Test cargar_datos: ")
-print(" ")
-print(" ")
+# # Test:
+# print("Test cargar_datos: ")
+# print(" ")
+# print(" ")
 
-path = os.path.abspath(os.path.join(os.getcwd(), os.pardir)) + "/Implementacion/Datos/"
+# path = os.path.abspath(os.path.join(os.getcwd(), os.pardir)) + "/Implementacion/Datos/"
 
-test_elements = [
-    "mst8n16a_tiny.txt",
-    "A5_ZikloaDuGZ.txt",
-    "HZM_n8_a11_134.txt"
-]
+# test_elements = [
+#     "mst8n16a_tiny.txt",
+#     "A5_ZikloaDuGZ.txt",
+#     "HZM_n8_a11_134.txt"
+# ]
 
-for name in test_elements:
-    newPath = path + name
-    n_vertices, n_aristas, grafo = leer_instancia(newPath)
-    print("Nombre: " + name)
-    print("Path: " + newPath)
-    print("Numero de vertices: ", n_vertices)
-    print("Numero de aristas: ", n_aristas)
-    print(" ")
-    print("Estructura de memoria: ")
-    print(grafo)
-    print(" ")
-    print(" ")
+# for name in test_elements:
+#     newPath = path + name
+#     n_vertices, n_aristas, datos = leer_instancia(newPath)
+#     print("Nombre: " + name)
+#     print("Path: " + newPath)
+#     print("Numero de vertices: ", n_vertices)
+#     print("Numero de aristas: ", n_aristas)
+#     print(" ")
+#     print("Estructura de memoria: ")
+#     G = Grafo(n_vertices)
+#     G.cargar_grafo(datos)
+#     print(G.grafo)
+#     print(" ")
+#     print(" ")
 
